@@ -95,7 +95,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   animation: movedown 500ms ease-in;
-  background-color: var(--primary-color-dark);
 }
 
 @keyframes movedown {
@@ -118,7 +117,7 @@ a {
 .nav__logo {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #ECF0F1;
+  color: var(--primary-color-dark);
   cursor: pointer;
 }
 
@@ -131,7 +130,7 @@ a {
 
 .link a {
   padding: 0 1rem;
-  color: #ECF0F1;
+  color: var(--primary-color-dark);
   transition: 0.2s;
 }
 
