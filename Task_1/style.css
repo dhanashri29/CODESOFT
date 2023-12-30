@@ -56,9 +56,10 @@
 .btn {
   padding: 0.7rem 1.5rem;
   outline: none;
-  border: none;
+  /* border: none; */
+  border: 1px solid var(--secondary-color) ;
   font-size: 1rem;
-  color: white;
+  color: var(--secondary-color);
   background-color: var(--primary-color-dark);
   border-radius: 1rem;
   cursor: pointer;
@@ -83,18 +84,16 @@ body {
 }
 
 nav {
+  position: fixed;
   padding: 1rem;
-  position: absolute;
   margin: auto;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
-  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   animation: movedown 500ms ease-in;
+  background-color: var(--primary-color-dark);
 }
 
 @keyframes movedown {
@@ -117,7 +116,7 @@ a {
 .nav__logo {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary-color-dark);
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -130,7 +129,7 @@ a {
 
 .link a {
   padding: 0 1rem;
-  color: var(--primary-color-dark);
+  color: var(--secondary-color);
   transition: 0.2s;
 }
 
@@ -210,6 +209,8 @@ header {
   margin-top: 1rem;
 }
 
+
+
 .destination__nav {
   display: flex;
   gap: 1rem;
@@ -229,7 +230,7 @@ header {
 }
 
 .destination__nav span:hover {
-  color: white;
+  color: var(--secondary-color);
   background-color: var(--text-light);
 }
 
@@ -385,13 +386,17 @@ header {
 }
 
 .subscribe {
-  background-color: var(--secondary-color);
+  background-color: #ECF0F1;
 }
 
 .subscribe__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 4rem;
+}
+
+.subscribe__container h2 {
+  font-size: 2.2rem;
 }
 
 .subscribe__form {
