@@ -105,13 +105,7 @@ nav {
     }
   }
 
-a {
-    border-bottom: 1px solid transparent;
-  }
 
- a:hover {
-    border-bottom: 1px solid var(--text-light);
-  }
 
 .nav__logo {
   font-size: 1.5rem;
@@ -124,18 +118,31 @@ a {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  font-size: 18px;
 }
 
-.link a {
-  padding: 0 1rem;
+.nav__links li a {
   color: var(--secondary-color);
-  transition: 0.2s;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
 }
 
-.link a:hover {
-  color: var(--text-light);
-}
+.nav__links li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+  }
+
+ .nav__links li a:hover::after {
+    width: 100%;
+  }
 
 header {
   background-color: #ECF0F1;

@@ -10,147 +10,143 @@
 <body>
     <header>
         <div class="user">
-            <img src="dhanu2.jpeg" alt="">
+            <img src="dhanu3.jpeg" alt="">
             <h3 class="name">Dhanashri Mahale</h3>
             <p class="post">Web Developer</p>
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#education">education</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">contact</a></li>
-                <!-- <li><a href="#projects">projects</a></li>
+                <li><a href="#home">home  <i class="fas fa-file-code"></i></a></li>
+                <li><a href="#about">about  <i class="fas fa-file-code"></i></a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
                 <li><a href="#resume">resume</a></li>
-                <li><a href="#contact">contact</a></li> -->
-            </ul>
+                <li><a href="#contact">contact  <i class="fas fa-comment"></i></a></li>
         </nav>
     </header>
 
-    <div id="menu" class="fas fa-bars"></div>
-
     <section class="home" id="home">
-        <h3>HI THERE!</h3>
+        <h3>Hey <span>!</span></h3>
         <h1>I'M <span>Dhanashri Mahale</span></h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel illo doloribus natus, blanditiis suscipit porro quae dolores nihil doloremque beatae voluptates ducimus cum debitis facere officiis labore nisi, dolorem obcaecati!   doloremque beatae voluptates ducimus cum debitis facere officiis labore nisi, dolorem obcaecati?</p>
-        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+        <p>A passionate and dedicated computer engineering student. As a budding technologist, I thrive on challenges, innovation, and the endless possibilities that technology presents. Join me on a journey through my academic and project experiences.</p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user-secret"></i></button></a>
     </section>
 
     <section class="about" id="about">
-        <h1 class="heading"><span>about</span> me</h1>
+        <h1 class="heading">about me</h1>
+        <div class="info">
+            <div class="para">
+               
+                <p>I am a Vishwakarma Institute of Information Technolgy, Pune student pursuing a degree in Computer Engineering. My academic journey has been marked by a relentless pursuit of knowledge, a commitment to problem-solving, and a keen interest in emerging technologies.</p>
+                <p>As a student and eager learner, I'm drawn to the realm of software engineering, where every line of code takes us a step closer to innovation. With an ever-curious mindset, I wholeheartedly welcome new challenges and absorb knowledge like a sponge.</p>
+                <p>I'm thrilled to connect with fellow enthusiasts, learn, and collaborate. Together, we have the power to shape the future of software development. Speaking of involvement and inspiration, I've taken part in leadership roles and engaged in hackathons and meetups, where I've had the opportunity to share my technical understanding and learn from others.</p>
+                <p><i class="fas fa-graduation-cap"></i>Education: <br><br> 2025<span> B.Tech from Vishwakarma Institute of Information Technolgy, Pune</span></p>
+                <p>2022<span> Diploma from Government Polytechnic Nashik, Nashik</span></p>
+                <p>2019<span> 10th from Madhyamik Vidya Mandir, Paste</span></p>
+            </div>
+
+            <div class="img">
+                <img src="dhanu.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1 class="heading"><span>my </span>skills</h1>
+        <div class="box-container">
+            <p class="links active-link" onclick="opentab('front-end')">front-end</p>
+            <p class="links" onclick="opentab('back-end')">back-end</p>
+            <p class="links" onclick="opentab('programming-lang')">programming skills</p>
+            <p class="links" onclick="opentab('other')">other</p>
+        </div>
+        <div class="link-contents active-tab" id="front-end">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>javaScript</li>
+                <li>bootstrap</li>
+                <li>ReactJS</li>
+                <li>AngularJS</li>
+            </ul>
+        </div>
+       
+        <div class="link-contents" id="back-end">
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>PHP</li>
+                <li>Oracle</li>
+                <li>SQL</li>
+                <li>Django</li>
+                <li>nodeJS</li>
+            </ul>
+        </div>
+
+        <div class="link-contents" id="programming-lang">
+            <ul>
+                <li> Java </li>
+                <li> Python </li>
+                <li> C </li>
+                <li> C++ </li>
+                <li> PHP </li>
+            </ul>
+        </div>
+        <div class="link-contents" id="other">
+            <ul>
+                <li>Web Development</li>
+                <li>Computer Networking</li>
+                <li>DBMS</li>
+                <li>Digital Marketing</li>
+                <li>Communication</li>
+                <li>Cyber Security</li>
+                <li>Team Work</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="heading">my <span>projects</span></h1>
+
+        <div class="box-container">
+
+            <div class="box1">
+                <img src="project1.png">
+                <div>
+                     <h2>Travel web app - Puneri !</h2>
+                     <p>The project is made for the people those are new to pune, and wants to visit the top places in pune. And it ensures that their journey will be with full of joy and love!</p>
+                     <button class="project-btn">learn more</button>
+                     <button class="project-btn">   <i class="fas fa-file-code"></i></button>
+                </div>
+            </div><br>
+            <div class="box2">
+                <img src="project2.png">
+                <div>
+                    <h2>Calculator</h2>
+                    <p>implemented an interactive interface with buttons for different operations. This project required skills and
+                        done with the basic knowledge of html, css and javascript technologies!</p>
+                    <button class="project-btn">learn more</i></button>
+                    <button class="project-btn"><i class="fas fa-file-code"></i></button>
+               </div>
+            </div>
+
+        </div>
+    </section>
+
+      <section class="resume" id="resume">
+        <h1 class="heading">resume</h1>
         <div class="row">
             <div class="info">
-                <h3><span>name : </span>Dhanashri Mahale</h3>
+                <h3><span>name : </span>Dhanashri Manik Mahale</h3>
                 <h3><span>age :</span>20</h3>
                 <h3><span>qualification : </span>B.Tech</h3>
                 <h3><span>post :</span>Web Developer</h3>
-                <h3><span>languages : </span>English, Hindi, Marathi</h3>
-                <a href="#"><button class="btn">download resume <i class="fas fa-download"></i></button></a>
-            </div>
-            <div class="counter">
-                <div class="box">
-                    <span>2+</span>
-                    <h3>Fresher</h3>
-                </div>
-            </div>
-            <div class="counter">
-                <div class="box">
-                    <span>2+</span>
-                    <h3>Projects</h3>
-                </div>
-            </div>
-            <div class="counter">
-                <div class="box">
-                    <span>2+</span>
-                    <h3>Fresher</h3>
-                </div>
-            </div>
-            <div class="counter">
-                <div class="box">
-                    <h3>Fresher</h3>
-                </div>
-            </div>
+                <h3><span>languages : </span>English, Hindi, Marathi</h3> 
+                <h3><span>experience : </span><span>2023 - current</span> web developer intern at CodeSoft <br> </h3>
+                <h3 id="spann"><span>1/oct/2023 - 31/oct/2023</span> internship at Prodigy infotech</h3> 
+                <h3><a href="#"><button class="download-btn">download resume <i class="fas fa-download"></i></button></a></h3>
+            </div> 
         </div>
-    </section>
-    <section class="education" id="education">
-        <h1 class="heading">my <span>education</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2019</span>
-                <h3>SSC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat odio enim hic nobis iste tempora pariatur quis? Facilis odio molestias vel vitae dolore praesentium rem nesciunt velit officiis ea!</p>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2020</span>
-                <h3>SSC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat odio enim hic nobis iste tempora pariatur quis? Facilis odio molestias vel vitae dolore praesentium rem nesciunt velit officiis ea!</p>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2021</span>
-                <h3>SSC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat odio enim hic nobis iste tempora pariatur quis? Facilis odio molestias vel vitae dolore praesentium rem nesciunt velit officiis ea!</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2022</span>
-                <h3>SSC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat odio enim hic nobis iste tempora pariatur quis? Facilis odio molestias vel vitae dolore praesentium rem nesciunt velit officiis ea!</p>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2023</span>
-                <h3>SSC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat odio enim hic nobis iste tempora pariatur quis? Facilis odio molestias vel vitae dolore praesentium rem nesciunt velit officiis ea!</p>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-graduation-cap"></i>
-                <span>2023</span>
-                <h3>SSC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quaerat odio enim hic nobis iste tempora pariatur quis? Facilis odio molestias vel vitae dolore praesentium rem nesciunt velit officiis ea!</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <h1 class="heading">my <span>portfolio</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="dhanu2.jpeg" alt="">
-            </div>
-
-            <div class="box">
-                <img src="dhanu2.jpeg" alt="">
-            </div>
-
-            <div class="box">
-                <img src="dhanu2.jpeg" alt="">
-            </div>
-
-            <div class="box">
-                <img src="dhanu2.jpeg" alt="">
-            </div>
-
-            <div class="box">
-                <img src="dhanu2.jpeg" alt="">
-            </div>
-
-            <div class="box">
-                <img src="dhanu2.jpeg" alt="">
-            </div>
-
-        </div>
-
-    </section>
+    </section> 
 
     <section class="contact" id="contact">
         <h1 class="heading"> <span>contact</span> me</h1>
@@ -158,10 +154,10 @@
             <div class="content">
                 <h3 class="title">contact info</h3>
                 <div class="info">
-                    <h3><i class="fas fa-envelope">dhanashri@gmail.com</i></h3>
-                    <h3><i class="fas fa-phone">+91 7721009821</i></h3>
-                    <h3><i class="fas fa-phone">+111-222-333</i></h3>
-                    <h3><i class="fas fa-map-marker-alt">pune, india - 422201.</i></h3>
+                    <h3><i class="far fa-envelope"> dhanashri@gmail.com</i></h3>
+                    <h3><i class="fas fa-mobile-alt"> +91 7721009821</i></h3>
+                    <h3><i class="fas fa-phone"> +111-222-333</i></h3>
+                    <h3><i class="fas fa-map-marker-alt"> pune, india - 422201.</i></h3>
                 </div>
             </div>
             <form action="">
@@ -174,22 +170,62 @@
         </div>
     </section>
 
-    <a href="#home" class="top">
+    <!-- <a href="#home" class="top">
         <img src="dhanu2.jpeg" alt="">
-    </a>
+    </a> -->
 
-    <!-- <section class="projects">
-
-    </section>
-    <section class="resume">
-
-    </section>
-    <section class="contact">
-
-    </section>
-    <footer>
-
-    </footer> -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h3>Puneriortfolio</h3>
+              <p>Embark on a Journey: Discover the Pune, Create Memories, and Find Your Adventure with us.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Support</h4>
+            <p>FAQs</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="footer__col">
+            <h4>Connect with Us</h4>
+            <a href="#instagram" >instagram<i class="fa fa-instagram"></i></a><br>
+            <a href="#linkedin" class="fa fa-linkedin">linkedin</a><br>
+            <a href="#twitter" class="fa fa-twitter">twitter</a><br>
+            <a href="#facebook" class="fa fa-facebook">facebook</a>
+          </div>
+          <div class="footer__col">
+            <h4>Address</h4>
+            <p>
+              <span>Address:</span> Pune, Maharshtra 411 000
+            </p>
+            <p><span>Email:</span> travel@puneway.com</p>
+            <p><span>Phone:</span> +91 7721009821</p>
+          </div>
+          
+        </div>
+        <div class="footer__bar">
+          Copyright © 2023 All rights reserved.
+        </div>
+      </footer>
 </body>
-<script src="script.js"></script>
+<script>
+
+    var links = document.getElementsByClassName("links");
+    var linkcontents = document.getElementsByClassName("link-contents");
+
+    function opentab(tabname){
+        for(link of links){
+            link.classList.remove("active-link");
+        }
+        for(linkcontent of linkcontents){
+            linkcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 </html>
