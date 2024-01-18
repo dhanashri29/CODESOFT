@@ -17,11 +17,6 @@
     color: white;
 }
 
-*::selection {
-    background-color: white;
-    color: #304ad0;
-}
-
 html{
     font-size: 65%;
     overflow-x: hidden;
@@ -49,17 +44,7 @@ section {
     border-radius: 1rem;
 }
 
-.btn i {
-    padding: 0 1rem;
-    font-size: 2rem;
-}
-
 .btn:hover {
-    background-color: var(--primary-color);
-    color: black;
-}
-
-.btn i:hover {
     background-color: var(--primary-color);
     color: black;
 }
@@ -363,64 +348,50 @@ h3 .download-btn {
     color: black;
 }
 
-.contact .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.contact {
+    padding-left: 22rem;
+    padding-right: 25rem;
 }
 
-.contact .row .content {
-    flex: 1 1 30rem;
-    padding: 4rem;
-    padding-bottom: 0;
-}
-
-.contact .row form {
-    flex: 1 1 45rem;
+.contact form {
     padding: 2rem;
     margin: 2rem;
     margin-bottom: 4rem;
 }
 
-.contact .row form .box {
+.contact form .box {
     padding: 1.5rem;
     margin: 1rem 0;
-    background-color: #3333;
+    background-color: #363333e6;
     color: #fff;
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
 }
 
-.contact .row form .box::placeholder {
+.contact form .box::placeholder {
     text-transform: capitalize;
 }
 
-.contact .row form .message {
-    height: 15rem;
+.contact form .message {
+    text-transform: none;
+    height: 12rem;
     resize: none;
 }
 
-.contact .row .content .title {
-    text-transform: uppercase;
+form .sbmt_btn {
+    padding: 0.5rem 2rem;
+    background-color: #333333;
     color: #fff;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-
-.contact .row .content .info h3 {
-    display: flex;
-    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem;
     font-size: 2rem;
-    color: #eee;
-    padding: 1rem 0;
-    font-weight: normal;
+    border-radius: 0rem;
 }
 
-.contact .row .content .info h3 i {
-    padding-right: 1rem;
-    color: var(--primary-color);
+form .sbmt_btn:hover {
+    background-color: var(--primary-color);
+    color: black;
 }
 
 .footer {
@@ -428,6 +399,8 @@ h3 .download-btn {
   }
   
   .footer__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     padding-left: 2.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -454,7 +427,7 @@ h3 .download-btn {
   }
   
   .footer__col p:hover {
-    color: var(--primary-color);
+    color: black;
   }
   
   .footer__col p span {
@@ -467,11 +440,20 @@ h3 .download-btn {
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
+  
   .footer__col a{
-    color: black;
+    color: white;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 1rem;
+  }
+
+  .footer__col a:hover{
+    color: black;
+  }
+
+  .footer__col p {
+    text-transform: none;
   }
   
   .footer__bar {
